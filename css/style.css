@@ -2304,7 +2304,7 @@ p.jtwt_tweet_text {
 #footer-social {
 	float: left;
 	height: 2.5em;
-	border-left: 1px solid rgba(255,255,255,0.2);
+	/*border-left: 1px solid rgba(255,255,255,0.2);*/
 	padding-left: 2em;
 	margin-left: 3em;
 }
@@ -2312,7 +2312,7 @@ p.jtwt_tweet_text {
 	width: 1em;
 	height: 1em;
 	line-height: 2.5rem;
-	margin: 0 1rem;
+	margin: 10px;
 	font-size: 1.125em;
 	border: 0;
 }
