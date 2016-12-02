@@ -1,3 +1,5 @@
+<cfparam name="pageTitle" default="" />
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
@@ -16,7 +18,7 @@
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="The Life of Riley - Professional photography and travel blog"/>
-    <meta name="twitter:title" content="The Life of Riley :: Home"/>
+    <meta name="twitter:title" content="The Life of Riley - <cfoutput>#pageTitle#</cfoutput>"/>
     <meta name="twitter:domain" content=""/>
     <meta name="twitter:image:src" content=""/>
 
@@ -35,78 +37,53 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!--[if IE 9]>
-	<link href="css/ie.css" rel="stylesheet">
-	<![endif]-->
+    <!--
+    [if IE 9]>
+	  <link href="css/ie.css" rel="stylesheet">
+	  <![endif]
+    -->
+
+    <!-- Gallery Theme Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/icomoon.css" media="screen" />
+    <link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
+    <link rel="stylesheet" href="css/gallery-style.css" media="screen" /> 
+    <link rel="stylesheet" href="css/dark-color-scheme.css" media="screen" /> 
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/gallery-ie.css" />
+    <![endif]
+    -->
  
 </head>
 
-<body class="home">
-  <div id="loader"><div id="loader-wrapper"><span class="loader-inner"></span></div></div>    
+<body class="">
   
-  <div class="main">
+  <!--- <div class="main"> --->
 
     <div class="main-wrapper clearfix">
+      <!--- 
+      <div id="loader"><div id="loader-wrapper"><span class="loader-inner"></span></div></div>     --->
+
       <!-- Site Header  -->
       <header id="main-header" class="site-header clearfix">
 
         <div id="header" class="box-animate">  
           <!-- Site Menu  -->
-          <div id="main-menu">
+          <!--- <div id="main-menu">
             <button class="header-icon menu"></button> 
             <nav class="navbar navbar-main">
               <ul class="nav">
-              <li><a href="index.cfm">home</a></li> 
-              <li class="dropdown">
-              <a href="blog.cfm">blog</a>
-              <!-- <ul class="submenu">
-              <li><a href="post.html">standard</a></li>
-              <li class="dropdown">
-              <a href="#">gallery</a>
-              <ul class="submenu">
-              <li><a href="post-gallery-light.html">light top</a></li>
-              <li><a href="post-gallery-dark.html">dark top</a></li>
+                <li><a href="index.cfm">home</a></li> 
+                <li class="dropdown">
+                  <a href="blog.cfm">blog</a>
+                </li>     
+                <li><a href="gallery.cfm">photography</a></li>           
               </ul>
-              </li>
-              <li class="dropdown">
-              <a href="post-media-dark.html">photography</a>
-              <ul class="submenu">
-              <li><a href="post-media-light.html">light top</a></li>
-              <li><a href="post-media-dark.html">dark top</a></li>
-              </ul>
-              </li>
-              <li><a href="post-quote.html">quote</a></li>
-              <li><a href="author.html">author&rsquo;s page</a></li>
-              <li><a href="archive.html">archive</a></li>
-              <li><a href="sitemap.html">site map</a></li>
-              <li><a href="404.html">404 page</a></li>
-              </ul> -->
-              </li>     
-              <li><a href="gallery.cfm">photography</a></li> 
-              <!-- 
-              <li><a href="#">shop</a></li> 
-              <li><a href="page.html#contact">contact</a></li>  
-              -->
-              <!--         
-              <li class="dropdown">
-              <a href="page.html">contact</a>
-              <ul class="submenu">
-              <li><a href="page.html#company">company</a></li> 
-              <li><a href="page.html#philosophy">philosophy &amp; mission</a></li> 
-              <li><a href="page.html#team">team</a></li> 
-              <li><a href="page.html#contact">contact us</a></li> 
-              </ul>
-              </li>    -->               
-            </ul>
-          </nav>
-        </div><!-- // .main-menu-->
+            </nav>
+          </div> ---><!-- // .main-menu-->
 
-        <div style="height:400px; display: clear"><img src="logo/CraigRileyPhotographyWhite.png" width="220px" alt="" style="margin: -10px" /></div>
-          <!-- 
-          <h1 class="site-title site-name">&nbsp;</h1>
-          <p class="site-description">Professional Blog HTML Template</p> 
-          -->
-          <button class="header-icon" id="btn-search"><i class="fa fa-search"></i></button>
+        <div style="height:100px; display: clear"><img src="logo/CraigRileyPhotographyWhite.png" width="220px" alt="" style="margin: -10px" /><a href="<cfoutput>#Application.Home#</cfoutput>"></a></div>
         </div><!-- //#header -->
 
         <!-- Site Search  -->

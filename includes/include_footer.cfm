@@ -29,7 +29,7 @@
           <a href="https://www.instagram.com/craigrileyphotography" class="social twitter" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-          <a href="https://au.pinterest.com/thelifeofrileyo/" class="social twitter" target="_blank">
+          <a href="https://au.pinterest.com/craigariley/" class="social twitter" target="_blank">
               <i class="fa fa-pinterest-p" aria-hidden="true"></i>
           </a>
           <a href="https://en.wikipedia.org/wiki/Craig_Riley" class="social twitter" target="_blank">
@@ -43,10 +43,13 @@
     </div> <!-- //.footer-sidebar -->
   </footer>
 
-</div> <!-- //.main -->
+</div> <!-- //.main-wrapper -->
+
+<!--- </div> ---> <!-- //.main -->
+
 
 <!-- Load JavaScript Libraries -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js" type="text/javascript"></script>
 <script src="js/modernizr-2.8.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- Custom js for this template  -->
@@ -54,6 +57,26 @@
 <script src="js/masonry.min.js"></script>   
 <script src="js/images.min.js"></script>
 <script src="js/functions.js"></script>
+
+
+<!-- Gallery Theme Scripts -->
+<script src="js/jquery.min.js"></script> 
+<script src="js/retina.min.js"></script>  
+<script src="js/imagesloaded.pkgd.min.js"></script> 
+<script src="js/jquery.lazyloadxt.min.js"></script> 
+<script>$.lazyLoadXT.updateEvent += ' layoutComplete';</script>
+<!-- include Masonry -->
+<script src="js/isotope.pkgd.min.js"></script> 
+<!-- include image popups -->
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="js/scripts.js"></script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -63,7 +86,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-21418229-1', 'auto');
 ga('send', 'pageview');
-
 </script>
 
 </body>

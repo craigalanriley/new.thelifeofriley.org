@@ -575,7 +575,7 @@ h1.site-title, a.site-title, .site-title  {
 	position: relative;
 	display: block;
 	padding: 0.5rem 2.5rem;
-	color: #000;
+	color: #000 !important; /* CR Override gallery colours */
 	line-height: 1.2;
 	font-size: 1.125em;
 }
@@ -696,7 +696,7 @@ figure {
 	position: relative;
 	overflow: hidden;
 }
-figcaption {
+/*figcaption {
 	position: absolute;
 	top: 100%;
 	width: 100%;
@@ -714,7 +714,7 @@ a.popup + figcaption {
 	position: absolute;
 	visibility: hidden;
 	border: 0;
-}
+}*/
 blockquote {
     border-left: 3px solid rgba(0,0,0,0.2);
     margin: 4em 0;

@@ -4,6 +4,9 @@
  * @since Grid312 1.0
 -->
 
+<!-- Redirect to gallery until home finished -->
+<cflocation url="gallery.cfm" addtoken="false">
+
 <cfinclude template="includes/include_header.cfm">
 
    <!-- Content -->
